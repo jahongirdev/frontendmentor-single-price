@@ -42,12 +42,137 @@ main {
      margin: auto;
 }
 
+.parent {
+     width: 650px;
+     height: auto;
+     background-color: var(--white-color);
+     box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.074);
+     border-radius: 10px;
+}
 
+.child-top {
+     padding: 40px;
+}
 
+.child-top h2 {
+     margin-top: 0;
+     margin-bottom: 20px;
+     color: hsl(179, 62%, 43%);
+}
 
-@media only screen and (max-width: 1000px) {
+.child-top h4 {
+     margin-top: 0;
+     margin-bottom: 12px;
+     color: hsl(71, 73%, 54%);
+}
+
+.child-top p {
+     margin-top: 0;
+     margin-bottom: 0;
+     color: hsl(218, 22%, 67%);
+     line-height: 1.6;
+}
+
+.child-bottom {
+     display: flex;
+     flex-direction: row;
+     color: var(--white-color);
      
 }
-@media only screen and (max-width: 600px) {
-     
+
+.child-one {
+     background-color: hsl(179, 62%, 43%);
+     width: 100%;
+     padding: 40px;
+     border-radius: 0px 0px 0px 10px;
+}
+
+.child-one h3 {
+     margin-top: 0;
+     margin-bottom: 15px;
+}
+
+
+.child-price {
+     display: flex;
+     align-items: center;
+     margin-top: 0;
+     margin-bottom: 8px;
+}
+
+.child-price h1 {
+     margin-top: 0;
+     margin-bottom: 0;
+     margin-right: 16px;
+}
+
+.child-price span {
+     color: hsla(203, 44%, 93%, 0.612);
+}
+
+.child-one p {
+     margin-top: 0;
+     margin-bottom: 40px;
+}
+
+.child-btn {
+     display: inline-block;
+     text-align: center;
+     text-decoration: none;
+     color: var(--white-color);
+     background-color: hsl(71, 73%, 54%);
+     padding: 15px;
+     width: 100%;
+     border-radius: 5px;
+     margin-top: 0;
+     margin-bottom: 0;
+     white-space: nowrap;
+     box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.595);
+}
+
+.child-btn:hover {
+     opacity: 0.9;
+}
+
+.child-two {
+     background-color: hsl(179, 43%, 51%);
+     width: 100%;
+     padding: 40px;
+     border-radius: 0px 0px 10px 0px;
+     margin-top: 0;
+     margin-bottom: 0;
+}
+
+.child-two h3 {
+     margin-top: 0;
+     margin-bottom: 20px;
+}
+
+.child-list {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+}
+
+.child-list li {
+     color: hsla(203, 44%, 93%, 0.765);
+     margin-top: 0;
+     margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 800px) {
+     .parent {
+          width: auto;
+          margin: 70px 30px;
+     }
+     .child-bottom {
+          display: flex;
+          flex-direction: column;
+     }
+     .child-one {
+          border-radius: 0px 0px 0px 0px;
+     }
+     .child-two {
+          border-radius: 0px 0px 10px 10px;
+     }
 }
